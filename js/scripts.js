@@ -1,19 +1,11 @@
-$(document).ready(function () {
-    $("#calculate").click(function () {
-        console.log("calculate button clicked");
-        var fromInput = $("#from").val();
-        var mathInput = $("#math").val();
-        var toInput = $("#to").val();
-        console.log("from: " + fromInput);
-        console.log("Math: " + mathInput);
-        console.log("To: " + toInput);
-        // if (mathInput == "/") {
-        //     alert("/");
-
-        // } else if(mathInput == "-") {
-        //     alert("-");
-        // } else if(mathInput == "*"){
-        //     alert("*");
-        // }
+$(document).ready(function() {
+    $("#calculate").click(function(){
+        var x = parseInt($("#from").val());
+        var y = parseInt($("#to").val());
+        var math = $("#math").val();
+        if (math == "+") {
+            var answer = x+y;
+            $("#answer").val(answer);
+        }
     });
 });
