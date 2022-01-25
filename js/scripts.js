@@ -6,6 +6,9 @@ $(document).ready(function() {
         if (math == "+") {
             var answer = x+y;
             $("#answer").val(answer);
+        } else if(math == '-'){
+            var answer = x-y;
+            $("#answer").val(answer);
         }
     });
 });
