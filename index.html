@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App with Jquery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <main class="bg-success min-vh-100 d-flex justify-content-center align-items-center p-3">
+        <div class="card w-100 w-md-25 shadow-lg">
+            <div class="card-header">
+                <div class="card-title">Calculator</div>
+            </div>
+            <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="from">From</label>
+                                <input type="number" name="from" id="from" class="form-control" placeholder="Enter From Value">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="math">Math operator</label>
+                                <select name="math" id="math" class="form-control">
+                                    <option value="+">+</option>
+                                    <option value="-">-</option>
+                                    <option value="/">/</option>
+                                    <option value="*">*</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="to">To</label>
+                                <input type="number" name="to" id="to" class="form-control" placeholder="Enter To Value" >
+                            </div>
+                            <div class="form-group">
+                                <button id="calculate" class="btn btn-primary btn-block">=</button>
+                            </div>
+                            <div class="form-group">
+                                <label for="to">Answer</label>
+                                <input type="text" name="to" id="to" class="form-control" placeholder="Enter To Value" readonly>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
